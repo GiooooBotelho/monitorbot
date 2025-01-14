@@ -1,0 +1,17 @@
+# Pastas
+__pycache__/
+
+env_price_rsi/
+
+# Arquivos de configuração local
+.env
+
+# Logs
+*.log
+
+# Planilhas de resultados
+*.xlsx
+
+# Outros arquivos temporários
+*.pyc
+*.pyo

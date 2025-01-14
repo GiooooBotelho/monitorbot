@@ -1,0 +1,10 @@
+python-binance
+asyncio
+numpy
+requests
+beautifulsoup4
+pandas
+datetime
+openpyxl
+numpy
+python-dotenv

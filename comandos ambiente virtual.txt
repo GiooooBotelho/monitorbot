@@ -1,0 +1,8 @@
+# Para o bot de spot mainnet
+python -m venv env_price_rsi
+
+# Ative o ambiente no Windows
+.\env_price_rsi\Scripts\activate
+
+# Instale as dependências
+pip install -r requirements.txt
