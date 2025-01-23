@@ -1,7 +1,7 @@
 import numpy as np
 from config import period
 
-def calculate_rsi(closes, period=period): # 🟣🟣
+def calculate_rsi(closes, period=period):
     """
     Calcula o Índice de Força Relativa (RSI) para uma lista de preços de fechamento.
     Args:

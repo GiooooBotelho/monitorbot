@@ -9,10 +9,15 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime # Importando o módulo datetime
 
+SEARCH_TIME = 60 * 60  # Espera 60 minutos antes de buscar novamente
+
 async def fetch_price_and_rsi(symbol):
     """
     Retorna o preço atual e o RSI para o símbolo especificado, exibe no console, e envia para o telegram a cada 30 minutos.
     """
+    
+    global SEARCH_TIME
+    
     client = await AsyncClient.create(mainnet_api_key, mainnet_secret_key)
     
     try:
@@ -56,7 +61,7 @@ async def fetch_price_and_rsi(symbol):
             data_row = format_monitor_data(symbol, current_price, rsi, variation_24h)
             save_monitor_data_to_excel(data_row)
 
-            await asyncio.sleep(900)  # Espera 15 minutos antes de buscar novamente
+            await asyncio.sleep(SEARCH_TIME)
 
     except Exception as e:
         print(f"\nErro ao buscar dados: {e}")

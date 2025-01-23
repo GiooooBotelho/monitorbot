@@ -13,6 +13,6 @@ mainnet_secret_key = os.getenv("mainnet_secret_key")
 bot_token = os.getenv("bot_token")
 chat_id = os.getenv("chat_id")
 
-interval = '15m'  # Intervalo de tempo para buscar dados de velas (candles).
-period = 10       # Período utilizado para cálculos que envolvem médias móveis ou outros indicadores.
-limit = 20        # Limite de dados históricos (por exemplo, velas) para recuperar de uma vez.
+interval = '1h'  # Intervalo de tempo para buscar dados de velas (candles).
+period = 20       # Período utilizado para cálculos que envolvem médias móveis ou outros indicadores.
+limit = 50        # Limite de dados históricos (por exemplo, velas) para recuperar de uma vez.

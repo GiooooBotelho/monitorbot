@@ -1,6 +1,6 @@
 from config import interval, limit
 
-async def get_closes(client, symbol, interval=interval, limit=limit): # 🟣🟣
+async def get_closes(client, symbol, interval=interval, limit=limit):
     """
     Obtém os preços de fechamento de velas para um símbolo específico.
     Args:
